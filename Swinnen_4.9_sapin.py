@@ -1,3 +1,4 @@
+import os
 height=int(input("Entrer la hauteur du sapin : "))
 #heightT=height
 i=1
@@ -14,3 +15,5 @@ while i<=height:
         j+=1
     print()
     i+=1
+
+os.system("pause")

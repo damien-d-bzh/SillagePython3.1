@@ -4,6 +4,7 @@ le 10/08/2020
 un programe qui crée une liste d'élèves inscripts à une classe
 enregistre leur notes et en calcule la moyenne
 """
+import os
 class UE_Eleves:
     def __init__(self, prenom, nom, moyene):
         self.prenom=prenom
@@ -24,6 +25,8 @@ class UE_Eleves:
 
 nombsEleves=int(input("Entrer le nombre d'élève pour l'UE : "))
 nts=int(input("Entrer le nombre de notes pour l'UE : "))
+print("Il est proposé d'attribuer des notes à base de nombres entiers de 1 à 10")
+print("commençons par rentrer le prénom et le nom de chaque élève puis leurs notes respectives: ")
 eleves=[]
 elevesNom=[]
 elevesPrenom=[]
@@ -50,7 +53,7 @@ Moyene.sort()
 print()
 print()
 print(elevesPrenom[nombsEleves-1]+" "+elevesNom[nombsEleves-1]+" "+str(elevesMoyene[nombsEleves-1]))
-
+os.system("pause")
 #UE_Eleves.Eleves(nombsEleves)ur l'UE : "))
 #for i in range(nombsEleves):
 #    print(taille_UE[i].prenom, taille_UE[i].nom, str(taille_UE[i].moyene))

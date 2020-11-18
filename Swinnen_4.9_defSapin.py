@@ -3,6 +3,7 @@ Ce programme imprime à l'écran un arbre de la forme d'un sapin
 dont la hauteur, ou plutôt nombre d'étage (pour ainsi dire) est
 saisi par l'utilisateur et affiche un nombre paire d'étoile
 """
+import os
 def sapin(height):
 #height=int(input("Entrer la hauteur du sapin : "))
 #heightT=height
@@ -23,3 +24,4 @@ def sapin(height):
 
 nmbre=int(input("Entrer la hauteur du sapin : "))
 sapin(nmbre)
+os.system("pause")

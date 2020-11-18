@@ -12,16 +12,16 @@ def Deviner():
     nombreMax=int(input("Valeur max pour fonction random : "))
     target=nombreA_Deviner(nombreMax)
     tenttive=nombreDeTentative()
-    print(target)
+    #print(target)
     #print(tenttive)
-    n=int(input("Essayer de deviner le nombre entre 0 et 50 : "))
+    n=int(input("Essayer de deviner le nombre entre 0 et "+str(nombreMax)+" :"))
     i=1
     while i<tenttive:
         #print(i)
         if n<target:
-            n=int(input("Essayer un nombre plus grand entre 0 et 50 : "))
+            n=int(input("Essayer un nombre plus grand entre 0 et "+str(nombreMax)+" :"))
         elif n>target:
-            n=int(input("Essayer un nombre plus petit entre 0 et 50 : "))
+            n=int(input("Essayer un nombre plus petit entre 0 et "+str(nombreMax)+" :"))
         else: break
         i+=1
     if n!=target:
@@ -29,3 +29,4 @@ def Deviner():
     else:
         return "bravo"
 print(Deviner())
+os.system("pause")
